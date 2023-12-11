@@ -1,0 +1,122 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #1a4057;
+
+}
+
+
+button {
+    background-color: #1a4057;
+    color:#cae5e7
+}
+
+button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+.mainbg {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+
+    background-position: bottom;
+    background-repeat: repeat-x;
+    overflow-y: scroll;
+}
+
+.gridcontainer  {
+    /*  */
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+    grid-template-rows:repeat(3);
+    width: 60%;
+    padding-left: 1%;
+
+
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gridcontainer div {
+    padding: 3%;
+    margin: 3%;
+    background-color: #cae5e7;
+
+}
+
+.leftmenu {
+    width: 20%;
+}
+
+h3 {
+    padding-left: 10%;
+    color: #fff;
+}
+
+.leftmenu ul {
+    list-style: none;
+}
+
+.leftmenu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.rightinsidecolumn {
+    width: auto;
+    padding: 10%;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+ 
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.rdiv1, .rdiv2, .rdiv3 {
+    color: rgb(15, 87, 105);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+.div1, .div2, .div3, .div4, .div5, .div6 {
+    border-radius: 3%;
+    color: rgb(15, 87, 105);
+      background: rgb(2,0,36);
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    width: 61%;
+    background-image: linear-gradient(to right, #1a4057, #6185ae00);
+    color: #fff;
+}
+
+.topmenu div {
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+.rightcontainertop {
+    display: flex;
+    align-content: end;
+    justify-content: baseline;
+    margin-right: 3%;
+}
+
+.rightcontainertop button {
+    height: 50px;
+    margin-right: 3%;
+}
